@@ -20,7 +20,8 @@ header .navbar-default {
     margin-top: 40px;
     color: white;
     border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, 0); }
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: 0.1s; }
     header .navbar-default .container .navbar-nav li a:hover {
       border-radius: 15px;
       border: 1px solid white; }
@@ -42,7 +43,8 @@ header .navbar-default {
     height: 36px;
     background-color: #81868e;
     border-radius: 50%;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: 0.1s; }
     .slider .container .arrow i {
       margin-top: 10px; }
     .slider .container .arrow:hover {
@@ -65,10 +67,12 @@ header .navbar-default {
       line-height: 25px; }
     .about-us .container .row .col-sm-6 a {
       text-decoration: none;
+      font-family: OpenSansRegular;
       color: #333b46;
       padding: 5px 20px;
       border-radius: 15px;
-      border: 1px solid rgba(0, 0, 0, 0); }
+      border: 1px solid rgba(0, 0, 0, 0);
+      transition: 0.1s; }
       .about-us .container .row .col-sm-6 a:hover {
         border-radius: 15px;
         border: 1px solid #333b46; }
@@ -82,7 +86,7 @@ header .navbar-default {
     font-family: SourceSansProLight;
     color: #333b46;
     margin: 80px 0 40px; }
-  .about-us-details .container p:first-child {
+  .about-us-details .container .text {
     width: 480px;
     margin: auto;
     color: #81868e;
@@ -96,7 +100,8 @@ header .navbar-default {
       border-radius: 26px;
       padding-top: 14px;
       color: white;
-      font-size: 19px; }
+      font-size: 19px;
+      transition: 0.1s; }
       .about-us-details .container .icons .icon:hover {
         background-color: #19bd9a; }
     .about-us-details .container .icons .icon:first-child {
@@ -104,7 +109,8 @@ header .navbar-default {
     .about-us-details .container .icons .icon:last-child {
       margin-left: 27px; }
   .about-us-details .container .row .col-sm-5 {
-    padding-left: 10%; }
+    padding-left: 10%;
+    padding-right: 5%; }
     .about-us-details .container .row .col-sm-5 h3 {
       font-family: SourceSansProLight; }
     .about-us-details .container .row .col-sm-5 p {
@@ -117,6 +123,12 @@ header .navbar-default {
       .about-us-details .container .row .col-sm-5 p b:last-child {
         color: #636971; }
   .about-us-details .container .row .col-sm-6 p {
-    margin-top: 86px; }
+    margin-top: 86px;
+    color: #81868e;
+    font-family: OpenSansRegular; }
+    .about-us-details .container .row .col-sm-6 p b {
+      color: #636971; }
+    .about-us-details .container .row .col-sm-6 p b:nth-child(2) {
+      color: #19bd9a; }
 
 /*# sourceMappingURL=style.css.map */

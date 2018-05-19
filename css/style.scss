@@ -53,6 +53,7 @@ header {
             color: white;
             border-radius: 15px ;
             border: 1px solid rgba(0, 0, 0, 0);
+            transition: 0.1s;
             &:hover {
               border-radius: 15px ;
               border: 1px solid white;
@@ -85,6 +86,8 @@ header {
       background-color: $first-color;
       border-radius: 50%;
       overflow: hidden;
+      transition: 0.1s;
+
       i {
         margin-top: 10px;
       }
@@ -118,10 +121,13 @@ header {
         }
         a {
           text-decoration: none;
+          font-family: $main-font;
           color: $title-color;
           padding: 5px 20px;
           border-radius: 15px ;
           border: 1px solid rgba(0, 0, 0, 0);
+          transition: 0.1s;
+
           &:hover {
             border-radius: 15px ;
             border: 1px solid $title-color;
@@ -144,7 +150,7 @@ header {
       color: $title-color;
       margin: 80px 0 40px;
     }
-    p:first-child {
+    .text {
       width: 480px;
       margin: auto;
       color: $text-color;
@@ -160,7 +166,9 @@ header {
         padding-top: 14px;
         color: white;
         font-size: 19px;
-          &:hover {
+        transition: 0.1s;
+
+        &:hover {
             background-color: $second-color;
           }
       }
@@ -174,7 +182,7 @@ header {
     .row {
       .col-sm-5 {
         padding-left: 10%;
-        //padding-right: 5%;
+        padding-right: 5%;
         h3 {
           font-family: $title-font;
           
@@ -195,6 +203,14 @@ header {
       .col-sm-6 {
         p {
           margin-top: 86px;
+          color: $text-color;
+          font-family: $main-font;
+          b {
+            color: #636971;
+          }
+          b:nth-child(2) {
+            color: $second-color;
+          }
         }
       }
     }
