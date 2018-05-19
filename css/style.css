@@ -1,3 +1,39 @@
+header .navbar-default {
+  position: absolute;
+  background-color: rgba(1, 1, 1, 0);
+  background-image: unset;
+  border-width: 0;
+  box-shadow: none; }
+  header .navbar-default .container .navbar-header .navbar-brand {
+    margin-top: 32px; }
+  header .navbar-default .container .navbar-nav li a {
+    padding: 5px 8px;
+    margin-top: 40px;
+    color: white; }
+    header .navbar-default .container .navbar-nav li a:hover {
+      border-radius: 15px;
+      border: 1px solid white;
+      margin-top: 38px; }
 
+.slider {
+  background-image: url("../images/slider_bg.png");
+  height: 737px;
+  color: white; }
+  .slider .container h1 {
+    margin-top: 290px; }
+  .slider .container P {
+    margin-top: 40px;
+    height: 265px; }
+  .slider .container .arrow {
+    margin: auto;
+    width: 36px;
+    height: 36px;
+    background-color: #81868e;
+    border-radius: 50%;
+    overflow: hidden; }
+    .slider .container .arrow i {
+      margin-top: 10px; }
+    .slider .container .arrow:hover {
+      background-color: #19bd9a; }
 
 /*# sourceMappingURL=style.css.map */
