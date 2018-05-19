@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url("../fonts/OpenSansRegular.eot");
+  src: url("../fonts/OpenSansRegular.eot") format("embedded-opentype"), url("../fonts/OpenSansRegular.woff2") format("woff2"), url("../fonts/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular.ttf") format("truetype"), url("../fonts/OpenSansRegular.svg#OpenSansRegular") format("svg"); }
+@font-face {
+  font-family: 'SourceSansProLight';
+  src: url("../fonts/SourceSansProLight.eot");
+  src: url("../fonts/SourceSansProLight.eot") format("embedded-opentype"), url("../fonts/SourceSansProLight.woff2") format("woff2"), url("../fonts/SourceSansProLight.woff") format("woff"), url("../fonts/SourceSansProLight.ttf") format("truetype"), url("../fonts/SourceSansProLight.svg#SourceSansProLight") format("svg"); }
 header .navbar-default {
   position: absolute;
   background-color: rgba(1, 1, 1, 0);
@@ -7,21 +15,25 @@ header .navbar-default {
   header .navbar-default .container .navbar-header .navbar-brand {
     margin-top: 32px; }
   header .navbar-default .container .navbar-nav li a {
-    padding: 5px 8px;
+    font-family: OpenSansRegular;
+    padding: 5px 20px;
     margin-top: 40px;
-    color: white; }
+    color: white;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0); }
     header .navbar-default .container .navbar-nav li a:hover {
       border-radius: 15px;
-      border: 1px solid white;
-      margin-top: 38px; }
+      border: 1px solid white; }
 
 .slider {
   background-image: url("../images/slider_bg.png");
   height: 737px;
   color: white; }
   .slider .container h1 {
-    margin-top: 290px; }
+    margin-top: 290px;
+    font-family: SourceSansProLight; }
   .slider .container P {
+    font-family: OpenSansRegular;
     margin-top: 40px;
     height: 265px; }
   .slider .container .arrow {
@@ -35,5 +47,32 @@ header .navbar-default {
       margin-top: 10px; }
     .slider .container .arrow:hover {
       background-color: #19bd9a; }
+
+.about-us {
+  padding-top: 80px;
+  padding-bottom: 55px; }
+  .about-us .container .row .col-sm-6 {
+    padding-left: 67px;
+    padding-right: 35px; }
+    .about-us .container .row .col-sm-6 h2 {
+      font-family: SourceSansProLight;
+      margin-bottom: 50px;
+      color: #333b46; }
+    .about-us .container .row .col-sm-6 p {
+      font-family: OpenSansRegular;
+      margin-bottom: 35px;
+      color: #81868e;
+      line-height: 25px; }
+    .about-us .container .row .col-sm-6 a {
+      text-decoration: none;
+      color: #333b46;
+      padding: 5px 20px;
+      border-radius: 15px;
+      border: 1px solid rgba(0, 0, 0, 0); }
+      .about-us .container .row .col-sm-6 a:hover {
+        border-radius: 15px;
+        border: 1px solid #333b46; }
+  .about-us .container .row .col-sm-5 {
+    padding-left: 100px; }
 
 /*# sourceMappingURL=style.css.map */

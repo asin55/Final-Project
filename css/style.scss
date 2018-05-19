@@ -1,5 +1,35 @@
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('../fonts/OpenSansRegular.eot');
+  src: url('../fonts/OpenSansRegular.eot') format('embedded-opentype'),
+  url('../fonts/OpenSansRegular.woff2') format('woff2'),
+  url('../fonts/OpenSansRegular.woff') format('woff'),
+  url('../fonts/OpenSansRegular.ttf') format('truetype'),
+  url('../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'SourceSansProLight';
+  src: url('../fonts/SourceSansProLight.eot');
+  src: url('../fonts/SourceSansProLight.eot') format('embedded-opentype'),
+  url('../fonts/SourceSansProLight.woff2') format('woff2'),
+  url('../fonts/SourceSansProLight.woff') format('woff'),
+  url('../fonts/SourceSansProLight.ttf') format('truetype'),
+  url('../fonts/SourceSansProLight.svg#SourceSansProLight') format('svg');
+}
+
+
+
 $first-color: #81868e;
 $second-color: #19bd9a;
+
+$title-font: SourceSansProLight;
+$main-font: OpenSansRegular;
+
+$title-color: #333b46;
+$text-color: #81868e;
+
+
 header {
 
 
@@ -19,15 +49,16 @@ header {
       .navbar-nav {
         li {
           a {
-            padding: 5px 8px;
+            font-family: $main-font;
+            padding: 5px 20px;
             margin-top: 40px;
             color: white;
-            //border-radius: 15px;
-            //border-width: 1px;
+            border-radius: 15px ;
+            border: 1px solid rgba(0, 0, 0, 0);
+
             &:hover {
               border-radius: 15px ;
               border: 1px solid white;
-              margin-top: 38px;
             }
           }
         }
@@ -44,10 +75,11 @@ header {
   .container{
     h1 {
       margin-top: 290px;
+      font-family: $title-font;
     }
     P {
+      font-family: $main-font;
       margin-top: 40px;
-
       height: 265px;
     }
     .arrow {
@@ -62,6 +94,49 @@ header {
       }
       &:hover {
         background-color: $second-color;
+      }
+
+    }
+  }
+}
+
+.about-us {
+  padding-top: 80px;
+  padding-bottom: 55px;
+  .container {
+    .row {
+      .col-sm-6 {
+        padding-left: 67px;
+        padding-right: 35px;
+
+        h2 {
+          font-family: $title-font;
+          margin-bottom: 50px;
+          color: $title-color;
+
+        }
+        p {
+          font-family: $main-font;
+          margin-bottom: 35px;
+          color: $text-color;
+          line-height: 25px;
+        }
+        a {
+          text-decoration: none;
+          color: $title-color;
+          padding: 5px 20px;
+          border-radius: 15px ;
+          border: 1px solid rgba(0, 0, 0, 0);
+          &:hover {
+            border-radius: 15px ;
+            border: 1px solid $title-color;
+          }
+
+        }
+      }
+
+      .col-sm-5 {
+        padding-left: 100px;
       }
 
     }
