@@ -22,6 +22,7 @@
 
 $first-color: #81868e;
 $second-color: #19bd9a;
+$bg-color-grey: #f3f3f3;
 
 $title-font: SourceSansProLight;
 $main-font: OpenSansRegular;
@@ -31,15 +32,12 @@ $text-color: #81868e;
 
 
 header {
-
-
   .navbar-default {
     position: absolute;
     background-color: rgba(1, 1, 1, 0);
     background-image: unset;
     border-width: 0;
     box-shadow: none;
-
     .container {
       .navbar-header {
         .navbar-brand{
@@ -55,7 +53,6 @@ header {
             color: white;
             border-radius: 15px ;
             border: 1px solid rgba(0, 0, 0, 0);
-
             &:hover {
               border-radius: 15px ;
               border: 1px solid white;
@@ -65,7 +62,6 @@ header {
       }
     }
   }
-
 }
 
 .slider {
@@ -113,7 +109,6 @@ header {
           font-family: $title-font;
           margin-bottom: 50px;
           color: $title-color;
-
         }
         p {
           font-family: $main-font;
@@ -131,14 +126,77 @@ header {
             border-radius: 15px ;
             border: 1px solid $title-color;
           }
-
         }
       }
-
       .col-sm-5 {
         padding-left: 100px;
       }
+    }
+  }
+}
 
+.about-us-details {
+  background-color: $bg-color-grey;
+  padding-bottom: 80px;
+  .container {
+    h2:first-child {
+      font-family: $title-font;
+      color: $title-color;
+      margin: 80px 0 40px;
+    }
+    p:first-child {
+      width: 480px;
+      margin: auto;
+      color: $text-color;
+      font-family: $main-font;
+    }
+    .icons {
+      margin: 60px auto;
+      .icon {
+        width: 53px;
+        height: 53px;
+        background-color: $first-color;
+        border-radius: 26px;
+        padding-top: 14px;
+        color: white;
+        font-size: 19px;
+          &:hover {
+            background-color: $second-color;
+          }
+      }
+      .icon:first-child {
+        margin-right: 27px;
+      }
+      .icon:last-child {
+        margin-left: 27px;
+      }
+    }
+    .row {
+      .col-sm-5 {
+        padding-left: 10%;
+        //padding-right: 5%;
+        h3 {
+          font-family: $title-font;
+          
+        }
+        p {
+          font-family: $main-font;
+          color: $text-color;
+          font-size: 16px;
+          b:first-child {
+            color: $second-color;
+          }
+          b:last-child {
+            color: #636971;
+          }
+          margin-top: 40px;
+        }
+      }
+      .col-sm-6 {
+        p {
+          margin-top: 86px;
+        }
+      }
     }
   }
 }
