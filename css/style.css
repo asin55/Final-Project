@@ -131,4 +131,64 @@ header .navbar-default {
     .about-us-details .container .row .col-sm-6 p b:nth-child(2) {
       color: #19bd9a; }
 
+.featured-work {
+  padding-top: 80px; }
+  .featured-work .container-fluid h2 {
+    font-family: SourceSansProLight;
+    color: #333b46; }
+  .featured-work .container-fluid p {
+    font-family: OpenSansRegular;
+    color: #81868e;
+    max-width: 480px;
+    margin: 40px auto 60px; }
+  .featured-work .container-fluid .row .work {
+    padding: 0;
+    height: 319px;
+    position: relative; }
+    .featured-work .container-fluid .row .work:after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-color: black;
+      opacity: 0.8;
+      left: 0;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: SourceSansProLight;
+      padding-top: 150px;
+      font-weight: lighter;
+      color: white; }
+    .featured-work .container-fluid .row .work:hover:after {
+      display: none; }
+  .featured-work .container-fluid .row .first {
+    background-image: url("../images/Futured-work_+.png"); }
+    .featured-work .container-fluid .row .first:after {
+      content: "+"; }
+  .featured-work .container-fluid .row .second {
+    background-image: url("../images/Futured-work_vintage.png"); }
+    .featured-work .container-fluid .row .second:after {
+      content: "vintage"; }
+  .featured-work .container-fluid .row .third {
+    background-image: url("../images/Futured-work_branding.png"); }
+    .featured-work .container-fluid .row .third:after {
+      content: "branding"; }
+  .featured-work .container-fluid .foot {
+    background-image: url("../images/future-foot.png");
+    background-repeat: no-repeat;
+    margin: -15px; }
+    .featured-work .container-fluid .foot .row p {
+      font-family: OpenSansRegular;
+      color: white; }
+    .featured-work .container-fluid .foot .row .col-sm-3 {
+      padding-top: 35px; }
+      .featured-work .container-fluid .foot .row .col-sm-3 a {
+        text-decoration: none;
+        font-family: OpenSansRegular;
+        color: white;
+        padding: 5px 20px;
+        transition: 0.1s;
+        border-radius: 15px;
+        border: 1px solid white; }
+
 /*# sourceMappingURL=style.css.map */
