@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css">
+    <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/jquery-2.2.1.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/gamma.js" type="text/javascript"></script>
+    <script src="js/modernizr.custom.70736.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
 </head>
 <body>
@@ -45,7 +48,7 @@
                 </div><!-- /.container-fluid -->
             </nav>
         </div>
-    </header>
+    </header> <!--MENU-->
 <section class="slider">
     <div class="container text-center">
         <h1>We Are Code Cafe</h1>
@@ -53,7 +56,7 @@
         <div class="arrow"><i class="fas fa-arrow-down"></i></div>
 
     </div>
-</section>
+</section> <!--slider-->
 
 <section class="about-us">
     <div class="container">
@@ -68,7 +71,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> <!--about-us-->
 
 <section class="about-us-details">
     <div class="container text-center">
@@ -90,7 +93,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> <!--about-us-details-->
 
 <section class="featured-work">
     <div class="container-fluid text-center">
@@ -110,7 +113,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> <!--featured-work-->
 
 <section class="our-services">
     <div class="container">
@@ -178,7 +181,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> <!--our-services-->
 
 <section class="team-quotes">
     <div class="container">
@@ -198,14 +201,288 @@
         </div>
     </div>
 
-</section>
+</section> <!--team-quotes-->
 
 <section class="portfolio">
     <div class="title text-center">
         <h2>THE PORTFOLIO</h2>
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
     </div>
-</section>
+    <div class="container">
+        <div class="gallery-menu">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#All Works" aria-controls="All Works" role="tab" data-toggle="tab">All Works</a></li>
+                <li role="presentation"><a href="#Print" aria-controls="Print" role="tab" data-toggle="tab">Print</a></li>
+                <li role="presentation"><a href="#Identity" aria-controls="Identity" role="tab" data-toggle="tab">Identity</a></li>
+                <li role="presentation"><a href="#Branding" aria-controls="Branding" role="tab" data-toggle="tab">Branding</a></li>
+                <li role="presentation"><a href="#Web" aria-controls="Web" role="tab" data-toggle="tab">Web</a></li>
+                <li role="presentation"><a href="#HTML" aria-controls="HTML" role="tab" data-toggle="tab">HTML</a></li>
+                <li role="presentation"><a href="#Wordpress" aria-controls="Wordpress" role="tab" data-toggle="tab">Wordpress</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="All Works">
+                    <div class="main">
+
+                        <div class="gamma-container gamma-loading" id="gamma-container">
+
+                            <ul class="gamma-gallery">
+
+                                <li>
+                                    <div data-alt="img03"  data-max-width="1800" data-max-height="1350">
+                                        <div data-src="images/galary-1.png" data-min-width="1300"></div>
+                                        <div data-src="images/galary-1.png" data-min-width="1000"></div>
+                                        <div data-src="images/galary-1.png" data-min-width="700"></div>
+                                        <div data-src="images/galary-1.png" data-min-width="300"></div>
+                                        <div data-src="images/galary-1.png" data-min-width="200"></div>
+                                        <div data-src="images/galary-1.png" data-min-width="140"></div>
+                                        <div data-src="images/galary-1.png"></div>
+                                        <noscript>
+                                            <img src="images/galary-1.png" alt="img03"/>
+                                        </noscript>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div data-alt="img03"  data-max-width="1800" data-max-height="1350">
+                                        <div data-src="images/galary-2.png" data-min-width="1300"></div>
+                                        <div data-src="images/galary-2.png" data-min-width="1000"></div>
+                                        <div data-src="images/galary-2.png" data-min-width="700"></div>
+                                        <div data-src="images/galary-2.png" data-min-width="300"></div>
+                                        <div data-src="images/galary-2.png" data-min-width="200"></div>
+                                        <div data-src="images/galary-2.png" data-min-width="140"></div>
+                                        <div data-src="images/galary-2.png"></div>
+                                        <noscript>
+                                            <img src="images/galary-2.png" alt="img03"/>
+                                        </noscript>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div data-alt="img03"  data-max-width="1800" data-max-height="1350">
+                                        <div data-src="images/galary-3.png" data-min-width="1300"></div>
+                                        <div data-src="images/galary-3.png" data-min-width="1000"></div>
+                                        <div data-src="images/galary-3.png" data-min-width="700"></div>
+                                        <div data-src="images/galary-3.png" data-min-width="300"></div>
+                                        <div data-src="images/galary-3.png" data-min-width="200"></div>
+                                        <div data-src="images/galary-3.png" data-min-width="140"></div>
+                                        <div data-src="images/galary-3.png"></div>
+                                        <noscript>
+                                            <img src="images/galary-3.png" alt="img03"/>
+                                        </noscript>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div data-alt="img03"  data-max-width="1800" data-max-height="1350">
+                                        <div data-src="images/galary-4.png" data-min-width="1300"></div>
+                                        <div data-src="images/galary-4.png" data-min-width="1000"></div>
+                                        <div data-src="images/galary-4.png" data-min-width="700"></div>
+                                        <div data-src="images/galary-4.png" data-min-width="300"></div>
+                                        <div data-src="images/galary-4.png" data-min-width="200"></div>
+                                        <div data-src="images/galary-4.png" data-min-width="140"></div>
+                                        <div data-src="images/galary-4.png"></div>
+                                        <noscript>
+                                            <img src="images/galary-4.png" alt="img03"/>
+                                        </noscript>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div data-alt="img03"  data-max-width="1800" data-max-height="1350">
+                                        <div data-src="images/galary-6.png" data-min-width="1300"></div>
+                                        <div data-src="images/galary-6.png" data-min-width="1000"></div>
+                                        <div data-src="images/galary-6.png" data-min-width="700"></div>
+                                        <div data-src="images/galary-6.png" data-min-width="300"></div>
+                                        <div data-src="images/galary-6.png" data-min-width="200"></div>
+                                        <div data-src="images/galary-6.png" data-min-width="140"></div>
+                                        <div data-src="images/galary-6.png"></div>
+                                        <noscript>
+                                            <img src="images/galary-6.png" alt="img03"/>
+                                        </noscript>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div data-alt="img03"  data-max-width="1800" data-max-height="1350">
+                                        <div data-src="images/galary-7.png" data-min-width="1300"></div>
+                                        <div data-src="images/galary-7.png" data-min-width="1000"></div>
+                                        <div data-src="images/galary-7.png" data-min-width="700"></div>
+                                        <div data-src="images/galary-7.png" data-min-width="300"></div>
+                                        <div data-src="images/galary-7.png" data-min-width="200"></div>
+                                        <div data-src="images/galary-7.png" data-min-width="140"></div>
+                                        <div data-src="images/galary-7.png"></div>
+                                        <noscript>
+                                            <img src="images/galary-7.png" alt="img03"/>
+                                        </noscript>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div data-alt="img03"  data-max-width="1800" data-max-height="1350">
+                                        <div data-src="images/galary-8.png" data-min-width="1300"></div>
+                                        <div data-src="images/galary-8.png" data-min-width="1000"></div>
+                                        <div data-src="images/galary-8.png" data-min-width="700"></div>
+                                        <div data-src="images/galary-8.png" data-min-width="300"></div>
+                                        <div data-src="images/galary-8.png" data-min-width="200"></div>
+                                        <div data-src="images/galary-8.png" data-min-width="140"></div>
+                                        <div data-src="images/galary-8.png"></div>
+                                        <noscript>
+                                            <img src="images/galary-8.png" alt="img03"/>
+                                        </noscript>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div data-alt="img03"  data-max-width="1800" data-max-height="1350">
+                                        <div data-src="images/galary-5.png" data-min-width="1300"></div>
+                                        <div data-src="images/galary-5.png" data-min-width="1000"></div>
+                                        <div data-src="images/galary-5.png" data-min-width="700"></div>
+                                        <div data-src="images/galary-5.png" data-min-width="300"></div>
+                                        <div data-src="images/galary-5.png" data-min-width="200"></div>
+                                        <div data-src="images/galary-5.png" data-min-width="140"></div>
+                                        <div data-src="images/galary-5.png"></div>
+                                        <noscript>
+                                            <img src="images/galary-5.png" alt="img03"/>
+                                        </noscript>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div data-alt="img03"  data-max-width="1800" data-max-height="1350">
+                                        <div data-src="images/galary-10.png" data-min-width="1300"></div>
+                                        <div data-src="images/galary-10.png" data-min-width="1000"></div>
+                                        <div data-src="images/galary-10.png" data-min-width="700"></div>
+                                        <div data-src="images/galary-10.png" data-min-width="300"></div>
+                                        <div data-src="images/galary-10.png" data-min-width="200"></div>
+                                        <div data-src="images/galary-10.png" data-min-width="140"></div>
+                                        <div data-src="images/galary-10.png"></div>
+                                        <noscript>
+                                            <img src="images/galary-10.png" alt="img03"/>
+                                        </noscript>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div data-alt="img03"  data-max-width="1800" data-max-height="1350">
+                                        <div data-src="images/galary-12.png" data-min-width="1300"></div>
+                                        <div data-src="images/galary-12.png" data-min-width="1000"></div>
+                                        <div data-src="images/galary-12.png" data-min-width="700"></div>
+                                        <div data-src="images/galary-12.png" data-min-width="300"></div>
+                                        <div data-src="images/galary-12.png" data-min-width="200"></div>
+                                        <div data-src="images/galary-12.png" data-min-width="140"></div>
+                                        <div data-src="images/galary-12.png"></div>
+                                        <noscript>
+                                            <img src="images/galary-12.png" alt="img03"/>
+                                        </noscript>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div data-alt="img03"  data-max-width="1800" data-max-height="1350">
+                                        <div data-src="images/galary-11.png" data-min-width="1300"></div>
+                                        <div data-src="images/galary-11.png" data-min-width="1000"></div>
+                                        <div data-src="images/galary-11.png" data-min-width="700"></div>
+                                        <div data-src="images/galary-11.png" data-min-width="300"></div>
+                                        <div data-src="images/galary-11.png" data-min-width="200"></div>
+                                        <div data-src="images/galary-11.png" data-min-width="140"></div>
+                                        <div data-src="images/galary-11.png"></div>
+                                        <noscript>
+                                            <img src="images/galary-11.png" alt="img03"/>
+                                        </noscript>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div data-alt="img03"  data-max-width="1800" data-max-height="1350">
+                                        <div data-src="images/galary-9.png" data-min-width="1300"></div>
+                                        <div data-src="images/galary-9.png" data-min-width="1000"></div>
+                                        <div data-src="images/galary-9.png" data-min-width="700"></div>
+                                        <div data-src="images/galary-9.png" data-min-width="300"></div>
+                                        <div data-src="images/galary-9.png" data-min-width="200"></div>
+                                        <div data-src="images/galary-9.png" data-min-width="140"></div>
+                                        <div data-src="images/galary-9.png"></div>
+                                        <noscript>
+                                            <img src="images/galary-9.png" alt="img03"/>
+                                        </noscript>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+
+
+                        </div>
+
+                    </div> <!--Gamma Galley-->
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Print">...</div>
+                <div role="tabpanel" class="tab-pane" id="Identity">...</div>
+                <div role="tabpanel" class="tab-pane" id="Branding">...</div>
+                <div role="tabpanel" class="tab-pane" id="Web">...</div>
+                <div role="tabpanel" class="tab-pane" id="HTML">...</div>
+                <div role="tabpanel" class="tab-pane" id="Wordpress">...</div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/jquery.masonry.min.js"></script>
+    <script src="js/jquery.history.js"></script>
+    <script src="js/js-url.min.js"></script>
+    <script src="js/jquerypp.custom.js"></script>
+    <script src="js/gamma.js"></script>
+    <script type="text/javascript">
+
+        $(function() {
+
+            var GammaSettings = {
+                // order is important!
+                viewport : [ {
+                    width : 1200,
+                    columns : 4
+                }, {
+                    width : 900,
+                    columns : 4
+                }, {
+                    width : 500,
+                    columns : 3
+                }, {
+                    width : 320,
+                    columns : 2
+                }, {
+                    width : 0,
+                    columns : 2
+                } ]
+            };
+
+            Gamma.init( GammaSettings, fncallback );
+
+
+            // Example how to add more items (just a dummy):
+
+            var page = 0,
+                items = ['<li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li>']
+
+            function fncallback() {
+
+                $( '#loadmore' ).show().on( 'click', function() {
+
+                    ++page;
+                    var newitems = items[page-1]
+                    if( page <= 1 ) {
+
+                        Gamma.add( $( newitems ) );
+
+                    }
+                    if( page === 1 ) {
+
+                        $( this ).remove();
+
+                    }
+
+                } );
+
+            }
+
+        });
+
+    </script>
+</section> <!--portfolio-->
 
 </body>
 </html>
