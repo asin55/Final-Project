@@ -321,6 +321,7 @@ header {
       .container {
         //margin: -15px;
         background-image: url("../images/future-foot.png");
+
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -407,8 +408,16 @@ header {
           margin-top: 18px;
           margin-bottom: 18px;
         }
+        @include max-screen(992px) {
+          margin-top: 20px;
+        }
+        @include max-screen(767px) {
+         margin-top: 0;
+        }
       }
-      .col-sm-5 {
+      .text {
+        text-align: left;
+        padding-left: 20px;
         h3 {
           margin-top: 0;
           font-family: $title-font;
@@ -427,10 +436,247 @@ header {
         }
         padding-right: 20px;
       }
-      .col-xs-10 {
+      @include max-screen(767px) {
         padding-left: 30px;
         padding-right: 15px;
       }
+      //.col-xs-10 {
+      //  padding-left: 30px;
+      //  padding-right: 15px;
+      //}
+    }
+    .prog {
+      .row {
+        font-family: $main-font;
+        color: $text-color;
+        margin-top: 40px;
+        @include max-screen(992px) {
+          margin-top: 0;
+        }
+        .progress{
+
+          width: 120px;
+          height: 120px;
+          line-height: 120px;
+          background: none;
+          margin: 20px auto ;
+          box-shadow: none;
+          position: relative;
+          &:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 3px solid #3c763d;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+
+          span {
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+          }
+          .progress-bar {
+            width: 100%;
+            height: 100%;
+            background: none;
+            border-width: 5px;
+            border-style: solid;
+            position: absolute;
+            top: 0;
+          }
+          .progress-left {
+            left: 0;
+            .progress-bar {
+              left: 100%;
+              border-top-right-radius: 80px;
+              border-bottom-right-radius: 80px;
+              border-left: 0;
+              -webkit-transform-origin: center left;
+              transform-origin: center left;
+            }
+          }
+          .progress-right {
+            right: 0;
+            .progress-bar {
+              left: -100%;
+              border-top-left-radius: 80px;
+              border-bottom-left-radius: 80px;
+              border-right: 0;
+              -webkit-transform-origin: center right;
+              transform-origin: center right;
+              animation: loading-1 1.8s linear forwards;
+
+              @keyframes loading-1{
+                0%{
+                  -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+                }
+                100%{
+                  -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+        }
+        .progress.first .progress-bar{
+          border-color: $second-color;
+        }
+        .progress.first .progress-left .progress-bar{
+          animation: loading-2 1.5s linear forwards 1.8s;
+
+          @keyframes loading-2{
+            0%{
+              -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+            }
+            100%{
+              -webkit-transform: rotate(108deg);
+              transform: rotate(108deg);
+            }
+          }
+        }
+        .progress.second .progress-bar{
+          border-color: $second-color;
+        }
+        .progress.second .progress-left .progress-bar{
+          animation: loading-3 1s linear forwards 1.8s;
+
+          @keyframes loading-3{
+            0%{
+              -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+            }
+            100%{
+              -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+            }
+          }
+        }
+        .progress.third .progress-bar{
+          border-color: $second-color;
+        }
+        .progress.third .progress-left .progress-bar{
+          animation: loading-4 0.4s linear forwards 1.8s;
+
+          @keyframes loading-4{
+            0%{
+              -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+            }
+            100%{
+              -webkit-transform: rotate(36deg);
+              transform: rotate(36deg);
+            }
+          }
+        }
+        .progress.green .progress-bar{
+          border-color: #1abc9c;
+        }
+        .progress.green .progress-left .progress-bar{
+          animation: loading-5 1.2s linear forwards 1.8s;
+
+          @keyframes loading-5{
+            0%{
+              -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+            }
+            100%{
+              -webkit-transform: rotate(126deg);
+              transform: rotate(126deg);
+            }
+          }
+        }
+        @media only screen and (max-width: 990px){
+          .progress{ margin-bottom: 20px; }
+        }
+        .col-sm-3 .col-xs-6 .col-xs-12{
+          p {
+            margin-left: 20px;
+            margin-top: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.team-quotes {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url("../images/quotes-bg.png");
+  background-size: cover;
+  min-height: 392px;
+  height: 100%;
+  .container {
+    .row {
+      .col-sm-7 {
+        h2 {
+          font-family:  $title-font;
+          color: white;
+          margin-bottom: 50px;
+        }
+        p {
+          font-family: $main-font;
+          color: #b2b3b3;
+          line-height: 25px;
+          span {
+            color: $second-color;
+          }
+        }
+
+        p:last-child {
+          text-transform: uppercase;
+          margin-top: 20px;
+
+        }
+      }
+      .col-sm-5 {
+
+        img {
+          margin: -120px auto 20px;
+          width: 100%;
+          max-width: 410px;
+          @include max-screen(992px) {
+            margin-top: 0;
+          }
+          @include max-screen(768px) {
+            margin: auto;
+            max-width: none;
+          }
+        }
+        .mac{
+          @include max-screen(768px) {
+            padding: 10%;
+          }
+        }
+      }
+      @include max-screen(768px) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+
+.portfolio {
+  padding-top: 80px;
+  .title {
+    h2 {
+      font-family: $title-font;
+      color: $title-color;
+      margin-bottom: 40px;
+    }
+    p {
+      font-family: $main-font;
+      color: $text-color;
+      margin-bottom: 80px;
     }
   }
 }

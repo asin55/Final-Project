@@ -270,22 +270,196 @@ header {
   .our-services .container .row .icons .icon:nth-child(3) {
     margin-top: 18px;
     margin-bottom: 18px; }
-  .our-services .container .row .col-sm-5 {
+  @media screen and (max-width: 992px) {
+    .our-services .container .row .icons {
+      margin-top: 20px; } }
+  @media screen and (max-width: 767px) {
+    .our-services .container .row .icons {
+      margin-top: 0; } }
+  .our-services .container .row .text {
+    text-align: left;
+    padding-left: 20px;
     padding-right: 20px; }
-    .our-services .container .row .col-sm-5 h3 {
+    .our-services .container .row .text h3 {
       margin-top: 0;
       font-family: SourceSansProLight;
       color: #333b46;
       margin-bottom: 35px; }
-    .our-services .container .row .col-sm-5 p {
+    .our-services .container .row .text p {
       font-family: OpenSansRegular;
       color: #81868e;
       margin-bottom: 35px;
       line-height: 25px; }
-      .our-services .container .row .col-sm-5 p b:first-child {
+      .our-services .container .row .text p b:first-child {
         color: #19bd9a; }
-  .our-services .container .row .col-xs-10 {
-    padding-left: 30px;
-    padding-right: 15px; }
+  @media screen and (max-width: 767px) {
+    .our-services .container .row {
+      padding-left: 30px;
+      padding-right: 15px; } }
+  .our-services .container .prog .row {
+    font-family: OpenSansRegular;
+    color: #81868e;
+    margin-top: 40px; }
+    @media screen and (max-width: 992px) {
+      .our-services .container .prog .row {
+        margin-top: 0; } }
+    .our-services .container .prog .row .progress {
+      width: 120px;
+      height: 120px;
+      line-height: 120px;
+      background: none;
+      margin: 20px auto;
+      box-shadow: none;
+      position: relative; }
+      .our-services .container .prog .row .progress:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 3px solid #3c763d;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .our-services .container .prog .row .progress span {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1; }
+      .our-services .container .prog .row .progress .progress-bar {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: 5px;
+        border-style: solid;
+        position: absolute;
+        top: 0; }
+      .our-services .container .prog .row .progress .progress-left {
+        left: 0; }
+        .our-services .container .prog .row .progress .progress-left .progress-bar {
+          left: 100%;
+          border-top-right-radius: 80px;
+          border-bottom-right-radius: 80px;
+          border-left: 0;
+          -webkit-transform-origin: center left;
+          transform-origin: center left; }
+      .our-services .container .prog .row .progress .progress-right {
+        right: 0; }
+        .our-services .container .prog .row .progress .progress-right .progress-bar {
+          left: -100%;
+          border-top-left-radius: 80px;
+          border-bottom-left-radius: 80px;
+          border-right: 0;
+          -webkit-transform-origin: center right;
+          transform-origin: center right;
+          animation: loading-1 1.8s linear forwards; }
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); } }
+    .our-services .container .prog .row .progress.first .progress-bar {
+      border-color: #19bd9a; }
+    .our-services .container .prog .row .progress.first .progress-left .progress-bar {
+      animation: loading-2 1.5s linear forwards 1.8s; }
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(108deg);
+    transform: rotate(108deg); } }
+    .our-services .container .prog .row .progress.second .progress-bar {
+      border-color: #19bd9a; }
+    .our-services .container .prog .row .progress.second .progress-left .progress-bar {
+      animation: loading-3 1s linear forwards 1.8s; }
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); } }
+    .our-services .container .prog .row .progress.third .progress-bar {
+      border-color: #19bd9a; }
+    .our-services .container .prog .row .progress.third .progress-left .progress-bar {
+      animation: loading-4 0.4s linear forwards 1.8s; }
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(36deg);
+    transform: rotate(36deg); } }
+    .our-services .container .prog .row .progress.green .progress-bar {
+      border-color: #1abc9c; }
+    .our-services .container .prog .row .progress.green .progress-left .progress-bar {
+      animation: loading-5 1.2s linear forwards 1.8s; }
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg); } }
+    @media only screen and (max-width: 990px) {
+      .our-services .container .prog .row .progress {
+        margin-bottom: 20px; } }
+    .our-services .container .prog .row .col-sm-3 .col-xs-6 .col-xs-12 p {
+      margin-left: 20px;
+      margin-top: 22px; }
+
+.team-quotes {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url("../images/quotes-bg.png");
+  background-size: cover;
+  min-height: 392px;
+  height: 100%; }
+  .team-quotes .container .row .col-sm-7 h2 {
+    font-family: SourceSansProLight;
+    color: white;
+    margin-bottom: 50px; }
+  .team-quotes .container .row .col-sm-7 p {
+    font-family: OpenSansRegular;
+    color: #b2b3b3;
+    line-height: 25px; }
+    .team-quotes .container .row .col-sm-7 p span {
+      color: #19bd9a; }
+  .team-quotes .container .row .col-sm-7 p:last-child {
+    text-transform: uppercase;
+    margin-top: 20px; }
+  .team-quotes .container .row .col-sm-5 img {
+    margin: -120px auto 20px;
+    width: 100%;
+    max-width: 410px; }
+    @media screen and (max-width: 992px) {
+      .team-quotes .container .row .col-sm-5 img {
+        margin-top: 0; } }
+    @media screen and (max-width: 768px) {
+      .team-quotes .container .row .col-sm-5 img {
+        margin: auto;
+        max-width: none; } }
+  @media screen and (max-width: 768px) {
+    .team-quotes .container .row .col-sm-5 .mac {
+      padding: 10%; } }
+  @media screen and (max-width: 768px) {
+    .team-quotes .container .row {
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+.portfolio {
+  padding-top: 80px; }
+  .portfolio .title h2 {
+    font-family: SourceSansProLight;
+    color: #333b46;
+    margin-bottom: 40px; }
+  .portfolio .title p {
+    font-family: OpenSansRegular;
+    color: #81868e;
+    margin-bottom: 80px; }
 
 /*# sourceMappingURL=style.css.map */
