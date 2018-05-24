@@ -6,37 +6,49 @@
   font-family: 'SourceSansProLight';
   src: url("../fonts/SourceSansProLight.eot");
   src: url("../fonts/SourceSansProLight.eot") format("embedded-opentype"), url("../fonts/SourceSansProLight.woff2") format("woff2"), url("../fonts/SourceSansProLight.woff") format("woff"), url("../fonts/SourceSansProLight.ttf") format("truetype"), url("../fonts/SourceSansProLight.svg#SourceSansProLight") format("svg"); }
-header .navbar-default {
-  position: absolute;
-  background-color: rgba(1, 1, 1, 0);
-  background-image: unset;
-  border-width: 0;
-  box-shadow: none; }
-  header .navbar-default .container .navbar-header .navbar-brand {
-    margin-top: 32px; }
-  header .navbar-default .container .navbar-nav li a {
-    font-family: OpenSansRegular;
-    padding: 5px 20px;
-    margin-top: 40px;
-    color: white;
-    border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, 0);
-    transition: 0.1s; }
-    header .navbar-default .container .navbar-nav li a:hover {
+header {
+  width: 100%;
+  position: absolute; }
+  header .navbar-default {
+    background-color: rgba(1, 1, 1, 0);
+    background-image: unset;
+    border-width: 0;
+    box-shadow: none; }
+    header .navbar-default .container .navbar-header .navbar-brand {
+      margin-top: 32px; }
+    header .navbar-default .container .navbar-nav li a {
+      font-family: OpenSansRegular;
+      padding: 5px 20px;
+      margin-top: 40px;
+      color: white;
       border-radius: 15px;
-      border: 1px solid white; }
+      border: 1px solid rgba(0, 0, 0, 0);
+      transition: 0.1s; }
+      header .navbar-default .container .navbar-nav li a:hover {
+        border-radius: 15px;
+        border: 1px solid white; }
+      @media screen and (max-width: 767px) {
+        header .navbar-default .container .navbar-nav li a {
+          margin-top: 00px; } }
 
 .slider {
   background-image: url("../images/slider_bg.png");
-  height: 737px;
+  background-size: cover;
+  min-height: 737px;
   color: white; }
   .slider .container h1 {
     margin-top: 290px;
     font-family: SourceSansProLight; }
+    @media screen and (max-width: 767px) {
+      .slider .container h1 {
+        margin-top: 350px; } }
   .slider .container P {
     font-family: OpenSansRegular;
     margin-top: 40px;
     height: 265px; }
+    @media screen and (max-width: 767px) {
+      .slider .container P {
+        height: 205px; } }
   .slider .container .arrow {
     margin: auto;
     width: 36px;
@@ -56,6 +68,10 @@ header .navbar-default {
   .about-us .container .row .col-sm-6 {
     padding-left: 67px;
     padding-right: 35px; }
+    @media screen and (max-width: 767px) {
+      .about-us .container .row .col-sm-6 {
+        padding-left: 15px;
+        padding-right: 15px; } }
     .about-us .container .row .col-sm-6 h2 {
       font-family: SourceSansProLight;
       margin-bottom: 50px;
@@ -78,6 +94,11 @@ header .navbar-default {
         border: 1px solid #333b46; }
   .about-us .container .row .col-sm-5 {
     padding-left: 100px; }
+    @media screen and (max-width: 767px) {
+      .about-us .container .row .col-sm-5 {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center; } }
 
 .about-us-details {
   background-color: #f3f3f3;
@@ -87,7 +108,8 @@ header .navbar-default {
     color: #333b46;
     margin: 80px 0 40px; }
   .about-us-details .container .text {
-    width: 480px;
+    max-width: 480px;
+    width: 100%;
     margin: auto;
     color: #81868e;
     font-family: OpenSansRegular; }
@@ -111,6 +133,10 @@ header .navbar-default {
   .about-us-details .container .row .col-sm-5 {
     padding-left: 10%;
     padding-right: 5%; }
+    @media screen and (max-width: 767px) {
+      .about-us-details .container .row .col-sm-5 {
+        padding-left: 15px;
+        padding-right: 15px; } }
     .about-us-details .container .row .col-sm-5 h3 {
       font-family: SourceSansProLight; }
     .about-us-details .container .row .col-sm-5 p {
@@ -136,7 +162,7 @@ header .navbar-default {
   .featured-work .container-fluid h2 {
     font-family: SourceSansProLight;
     color: #333b46; }
-  .featured-work .container-fluid p {
+  .featured-work .container-fluid .text {
     font-family: OpenSansRegular;
     color: #81868e;
     max-width: 480px;
@@ -162,33 +188,104 @@ header .navbar-default {
     .featured-work .container-fluid .row .work:hover:after {
       display: none; }
   .featured-work .container-fluid .row .first {
-    background-image: url("../images/Futured-work_+.png"); }
+    background-image: url("../images/img-1.png"); }
     .featured-work .container-fluid .row .first:after {
       content: "+"; }
   .featured-work .container-fluid .row .second {
-    background-image: url("../images/Futured-work_vintage.png"); }
+    background-image: url("../images/img-2.png"); }
     .featured-work .container-fluid .row .second:after {
       content: "vintage"; }
+    @media screen and (max-width: 767px) {
+      .featured-work .container-fluid .row .second {
+        background-repeat: no-repeat;
+        background-size: 100%; } }
   .featured-work .container-fluid .row .third {
-    background-image: url("../images/Futured-work_branding.png"); }
+    background-image: url("../images/img-3.png"); }
     .featured-work .container-fluid .row .third:after {
       content: "branding"; }
-  .featured-work .container-fluid .foot {
+    @media screen and (max-width: 767px) {
+      .featured-work .container-fluid .row .third {
+        background-repeat: no-repeat;
+        background-size: 100%; } }
+  .featured-work .container-fluid .foot .container {
     background-image: url("../images/future-foot.png");
     background-repeat: no-repeat;
-    margin: -15px; }
-    .featured-work .container-fluid .foot .row p {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    padding: 40px 0; }
+    .featured-work .container-fluid .foot .container p {
       font-family: OpenSansRegular;
       color: white; }
-    .featured-work .container-fluid .foot .row .col-sm-3 {
-      padding-top: 35px; }
-      .featured-work .container-fluid .foot .row .col-sm-3 a {
-        text-decoration: none;
-        font-family: OpenSansRegular;
-        color: white;
-        padding: 5px 20px;
-        transition: 0.1s;
-        border-radius: 15px;
-        border: 1px solid white; }
+    .featured-work .container-fluid .foot .container .col-sm-3 a {
+      text-decoration: none;
+      font-family: OpenSansRegular;
+      color: white;
+      padding: 5px 20px;
+      transition: 0.1s;
+      border-radius: 15px;
+      border: 1px solid white; }
+    @media screen and (max-width: 767px) {
+      .featured-work .container-fluid .foot .container .col-sm-3 {
+        padding-top: 20px; } }
+    @media screen and (max-width: 767px) {
+      .featured-work .container-fluid .foot .container {
+        padding: 30px 15px; } }
+
+@media screen and (max-width: 767px) {
+  .navbar-toggle {
+    margin-top: 40px;
+    margin-right: 30px; } }
+
+.our-services .container {
+  padding: 80px 0; }
+  .our-services .container .text {
+    text-align: center;
+    margin-bottom: 60px; }
+    .our-services .container .text h2 {
+      font-family: SourceSansProLight;
+      color: #333b46; }
+    .our-services .container .text p {
+      font-family: OpenSansRegular;
+      color: #81868e;
+      margin-top: 40px; }
+  @media screen and (max-width: 767px) {
+    .our-services .container {
+      text-align: left;
+      padding: 30px 15px; } }
+  .our-services .container .row .icons .icon {
+    width: 53px;
+    height: 53px;
+    background-color: #81868e;
+    border-radius: 26px;
+    padding-top: 14px;
+    color: white;
+    font-size: 19px;
+    transition: 0.1s; }
+    .our-services .container .row .icons .icon:hover {
+      background-color: #19bd9a; }
+  .our-services .container .row .icons .icon:nth-child(2) {
+    margin-top: 18px;
+    margin-bottom: 18px; }
+  .our-services .container .row .icons .icon:nth-child(3) {
+    margin-top: 18px;
+    margin-bottom: 18px; }
+  .our-services .container .row .col-sm-5 {
+    padding-right: 20px; }
+    .our-services .container .row .col-sm-5 h3 {
+      margin-top: 0;
+      font-family: SourceSansProLight;
+      color: #333b46;
+      margin-bottom: 35px; }
+    .our-services .container .row .col-sm-5 p {
+      font-family: OpenSansRegular;
+      color: #81868e;
+      margin-bottom: 35px;
+      line-height: 25px; }
+      .our-services .container .row .col-sm-5 p b:first-child {
+        color: #19bd9a; }
+  .our-services .container .row .col-xs-10 {
+    padding-left: 30px;
+    padding-right: 15px; }
 
 /*# sourceMappingURL=style.css.map */
