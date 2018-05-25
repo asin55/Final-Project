@@ -10,8 +10,7 @@ header {
   width: 100%;
   position: absolute; }
   header .navbar-default {
-    background-color: rgba(1, 1, 1, 0);
-    background-image: unset;
+    background: unset;
     border-width: 0;
     box-shadow: none; }
     header .navbar-default .container .navbar-header .navbar-brand {
@@ -71,7 +70,8 @@ header {
     @media screen and (max-width: 767px) {
       .about-us .container .row .col-sm-6 {
         padding-left: 15px;
-        padding-right: 15px; } }
+        padding-right: 15px;
+        margin-bottom: 30px; } }
     .about-us .container .row .col-sm-6 h2 {
       font-family: SourceSansProLight;
       margin-bottom: 50px;
@@ -130,28 +130,31 @@ header {
       margin-right: 27px; }
     .about-us-details .container .icons .icon:last-child {
       margin-left: 27px; }
-  .about-us-details .container .row .col-sm-5 {
+  .about-us-details .container .row .text {
     padding-left: 10%;
     padding-right: 5%; }
     @media screen and (max-width: 767px) {
-      .about-us-details .container .row .col-sm-5 {
+      .about-us-details .container .row .text {
         padding-left: 15px;
         padding-right: 15px; } }
-    .about-us-details .container .row .col-sm-5 h3 {
-      font-family: SourceSansProLight; }
-    .about-us-details .container .row .col-sm-5 p {
-      font-family: OpenSansRegular;
-      color: #81868e;
-      font-size: 16px;
-      margin-top: 40px; }
-      .about-us-details .container .row .col-sm-5 p b:first-child {
-        color: #19bd9a; }
-      .about-us-details .container .row .col-sm-5 p b:last-child {
-        color: #636971; }
+  .about-us-details .container .row .col-sm-5 h3 {
+    font-family: SourceSansProLight; }
+  .about-us-details .container .row .col-sm-5 p {
+    font-family: OpenSansRegular;
+    color: #81868e;
+    font-size: 16px;
+    margin-top: 40px; }
+    .about-us-details .container .row .col-sm-5 p b:first-child {
+      color: #19bd9a; }
+    .about-us-details .container .row .col-sm-5 p b:last-child {
+      color: #636971; }
   .about-us-details .container .row .col-sm-6 p {
     margin-top: 86px;
     color: #81868e;
     font-family: OpenSansRegular; }
+    @media screen and (max-width: 767px) {
+      .about-us-details .container .row .col-sm-6 p {
+        margin-top: 40px; } }
     .about-us-details .container .row .col-sm-6 p b {
       color: #636971; }
     .about-us-details .container .row .col-sm-6 p b:nth-child(2) {
@@ -184,7 +187,8 @@ header {
       font-family: SourceSansProLight;
       padding-top: 150px;
       font-weight: lighter;
-      color: white; }
+      color: white;
+      transition: 0.1s; }
     .featured-work .container-fluid .row .work:hover:after {
       display: none; }
   .featured-work .container-fluid .row .first {
@@ -207,17 +211,16 @@ header {
       .featured-work .container-fluid .row .third {
         background-repeat: no-repeat;
         background-size: 100%; } }
-  .featured-work .container-fluid .foot .container {
+  .featured-work .featur-bg {
     background-image: url("../images/future-foot.png");
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    width: 100%;
-    padding: 40px 0; }
-    .featured-work .container-fluid .foot .container p {
+    padding: 40px 0;
+    min-height: 112px;
+    height: 100%; }
+    .featured-work .featur-bg p {
       font-family: OpenSansRegular;
       color: white; }
-    .featured-work .container-fluid .foot .container .col-sm-3 a {
+    .featured-work .featur-bg .col-sm-3 a {
       text-decoration: none;
       font-family: OpenSansRegular;
       color: white;
@@ -226,10 +229,10 @@ header {
       border-radius: 15px;
       border: 1px solid white; }
     @media screen and (max-width: 767px) {
-      .featured-work .container-fluid .foot .container .col-sm-3 {
+      .featured-work .featur-bg .col-sm-3 {
         padding-top: 20px; } }
     @media screen and (max-width: 767px) {
-      .featured-work .container-fluid .foot .container {
+      .featured-work .featur-bg {
         padding: 30px 15px; } }
 
 @media screen and (max-width: 767px) {
@@ -278,23 +281,33 @@ header {
       margin-top: 0; } }
   .our-services .container .row .text {
     text-align: left;
-    padding-left: 20px;
-    padding-right: 20px; }
+    padding-left: 10px;
+    padding-right: 15px; }
     .our-services .container .row .text h3 {
       margin-top: 0;
       font-family: SourceSansProLight;
       color: #333b46;
       margin-bottom: 35px; }
+      @media screen and (max-width: 767px) {
+        .our-services .container .row .text h3 {
+          margin-bottom: 20px; } }
+    .our-services .container .row .text p:nth-child(2) {
+      font-size: 16px; }
     .our-services .container .row .text p {
       font-family: OpenSansRegular;
       color: #81868e;
       margin-bottom: 35px;
-      line-height: 25px; }
+      line-height: 25px;
+      margin-top: 0; }
       .our-services .container .row .text p b:first-child {
         color: #19bd9a; }
+    @media screen and (max-width: 767px) {
+      .our-services .container .row .text {
+        padding-left: 35px;
+        padding-right: 0; } }
   @media screen and (max-width: 767px) {
     .our-services .container .row {
-      padding-left: 30px;
+      padding-left: 15px;
       padding-right: 15px; } }
   .our-services .container .prog .row {
     font-family: OpenSansRegular;
@@ -316,7 +329,7 @@ header {
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        border: 3px solid #3c763d;
+        border: 4px solid #047378;
         position: absolute;
         top: 0;
         left: 0; }
@@ -687,9 +700,10 @@ header {
       .portfolio .container .nav-tabs li a:hover {
         background-color: unset;
         border: solid 1px rgba(0, 0, 0, 0);
-        color: #464646; }
+        color: #464646;
+        border-bottom: #19bd9a solid 1px; }
     .portfolio .container .nav-tabs li.active a {
-      border: none;
+      border: solid 1px rgba(0, 0, 0, 0);
       border-bottom: #19bd9a solid 1px; }
 
 /*# sourceMappingURL=style.css.map */
